@@ -68,7 +68,7 @@ describe('ScancodeSummarizerNew basic compatability', () => {
       const coordinates = { type: 'pypi', provider: 'pypi' }
       const harvestData = getHarvestData(scancodeVersion, 'pypi-complex-declared-license')
       const result = summarizer.summarize(coordinates, harvestData)
-      assert.equal(result.licensed.declared, 'HPND')
+      assert.equal(result.licensed.declared, 'LicenseRef-scancode-secret-labs-2011')
     }
   })
 
